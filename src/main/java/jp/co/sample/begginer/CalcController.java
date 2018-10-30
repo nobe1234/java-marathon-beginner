@@ -4,16 +4,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/nameRecieve")
-public class NameRecieveServlet {
+@RequestMapping("/calc")
+public class CalcController {
 
 	@RequestMapping("/index")
 	public String index() {
-		return "input";
+		return "/value/inputvalue";
 	}
 	
-	@RequestMapping("/toOutput")
+	@RequestMapping("/output")
 	public String toOutput() {
-		return "outputName";
+		return null;
 	}
+	
 }
