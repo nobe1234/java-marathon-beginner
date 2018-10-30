@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * フォームで入力した名前を表示するクラス.
+ * 
  * @author soheinobe
  *
  */
@@ -14,24 +15,27 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class NameRecieveController {
 
 	/**
-	 *処理の起点をなるメソッド.input.jspへフォワードする。
+	 * 処理の起点をなるメソッド.
+	 * 
+	 * 名前入力画面へフォワードする。
 	 *
-	 * @return input
+	 * @return input　名前入力画面
 	 */
 	@RequestMapping("/index")
 	public String index() {
 		return "input";
 	}
-	
+
 	/**
 	 * 名前を受け取って出力画面を表示する.
-	 * @param 
-	 * @param
+	 * 
+	 * @param　モデル
+	 * @param　リクエストパラメータで送られてくる名前
 	 * @return 出力画面
 	 */
 	@RequestMapping("/toOutput")
-	public String toOutput(Model model,String name) {
-		model.addAttribute("name",name);
+	public String toOutput(Model model, String name) {
+		model.addAttribute("name", name);
 		return "/outputName";
 	}
 }

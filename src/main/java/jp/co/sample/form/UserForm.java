@@ -1,23 +1,19 @@
-package jp.co.sample.domain;
+package jp.co.sample.form;
 
 /**
- * ユーザ情報を表すドメイン.
+ * リクエストフォームを受け取るフォーム.
  * 
  * @author soheinobe
  *
  */
-public class User {
-	/** 名前 */
-	private String name;
-	/** 年齢 */
-	private Integer age;
-	/** 住所 */
-	private String address;
+public class UserForm {
 
-	@Override
-	public String toString() {
-		return "User [name=" + name + ", age=" + age + ", address=" + address + "]";
-	}
+	/**  名前  */
+	private String name;
+	/**  年齢  */
+	private Integer age;
+	/**  住所  */
+	private String address;
 
 	public String getName() {
 		return name;
@@ -41,6 +37,11 @@ public class User {
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	@Override
+	public String toString() {
+		return "UserForm [name=" + name + ", age=" + age + ", address=" + address + "]";
 	}
 
 }
