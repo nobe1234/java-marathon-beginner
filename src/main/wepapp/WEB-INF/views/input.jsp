@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form>
+<form action="/nameRecieve/toOutput" method="post">
 名前：<input type="text" name="name"><br>
 <input type="submit" value="送信">
 </form>
