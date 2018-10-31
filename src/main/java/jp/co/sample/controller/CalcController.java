@@ -1,4 +1,4 @@
-package jp.co.sample.begginer;
+package jp.co.sample.controller;
 
 import javax.servlet.http.HttpSession;
 
